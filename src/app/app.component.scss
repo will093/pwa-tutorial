@@ -1,1 +1,37 @@
+:host {
+  font-family: 'Arial';
+}
 
+header {
+  height: 5rem;
+
+  h1 {
+    margin: 0;
+    padding-top: 1.4rem;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 5px;
+  }
+}
+
+main {
+  font-size: 1.4rem;
+  padding: 2rem 3rem;
+
+  .completed {
+    text-decoration: line-through;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  padding: 1rem 3rem;
+}
+
+header, footer {
+  background: #7c0A02;
+  color: #ffffff;
+}

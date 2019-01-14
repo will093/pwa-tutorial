@@ -3,9 +3,9 @@
 </header>
 <main>
   <p>Welcome to my PWA tutorial, here are some todos from JSONPlaceholder:</p>
-  <ul>
-    <li *ngFor="let todo of todos$ | async">{{ todo.title }}</li>
-  </ul>
+  <ol>
+    <li *ngFor="let todo of todos$ | async" [ngClass]="{ 'completed': todo.completed}">{{ todo.title }}</li>
+  </ol>
 </main>
 <footer>
   © Will Taylor 2019
